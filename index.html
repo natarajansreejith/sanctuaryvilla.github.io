@@ -49,5 +49,27 @@
       <a href="#news" class="btn">Latest News</a>
     </div>
   </div>
+  <div style="text-align: center; margin-top: 50px;">
+  <h2>Resident Login</h2>
+  <form onsubmit="return login()">
+    <input type="text" id="username" placeholder="Username" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+    <button type="submit">Login</button>
+  </form>
+</div>
+  <script>
+  function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username === "resident" && password === "villa123") {
+      sessionStorage.setItem("loggedIn", "true");
+      window.location.href = "main.html";
+    } else {
+      alert("Invalid credentials");
+    }
+    return false; // prevent form submission
+  }
+</script>
 </body>
 </html>
