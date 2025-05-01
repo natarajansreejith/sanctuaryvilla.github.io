@@ -46,7 +46,6 @@
     <div class="overlay">
       <h1>Welcome to Adarsh Sanctuary</h1>
       <p>Community portal for our vibrant villa community – stay informed, connected, and inspired.</p>
-      <a href="#news" class="btn">Login</a>
     </div>
   </div>
   <div style="text-align: center; margin-top: 50px;">
@@ -62,7 +61,7 @@
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username === "resident" && password === "villa123") {
+    if (username === "sanctuary" && password === "resident") {
       sessionStorage.setItem("loggedIn", "true");
       window.location.href = "main.html";
     } else {
