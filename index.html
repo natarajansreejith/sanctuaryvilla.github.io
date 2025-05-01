@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adarsh Sanctuary - Community Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: 'Segoe UI', sans-serif; }
+    .hero {
+      background: url('adarsh_sanctuary_bg.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      backdrop-filter: brightness(0.6);
+    }
+    .overlay {
+      background-color: rgba(0,0,0,0.5);
+      padding: 40px;
+      border-radius: 12px;
+    }
+    h1 { font-size: 48px; margin-bottom: 20px; }
+    p { font-size: 18px; margin-bottom: 30px; }
+    .btn {
+      padding: 12px 24px;
+      background-color: #ffffff;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover { background-color: #f5f5f5; }
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <h1>Welcome to Adarsh Sanctuary</h1>
+      <p>Official portal for our vibrant villa community – stay informed, connected, and inspired.</p>
+      <a href="#news" class="btn">Latest News</a>
+    </div>
+  </div>
+</body>
+</html>
